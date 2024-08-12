@@ -93,6 +93,11 @@ section {
     padding: 120px 19%;
 }
 
+.social-icons{
+    width: 200px;
+    height: auto;
+}
+
 .home {
     position: relative;
     min-height: 100vh;
@@ -157,7 +162,7 @@ section {
 /* Timeline Styles */
 .timeline-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     position: relative;
 }
@@ -285,7 +290,7 @@ section {
 
 .testimonial p {
     font-size: var(--p-font);
-    line-height: 1.5;
+    line-height: 2.5;
     margin-bottom: 15px;
 }
 
@@ -324,8 +329,77 @@ section {
 .footer p {
     margin: 0;
     font-size: var(--p-font);
+    font-weight: bolder;
 }
 
 .first {
     color: #101010;
+}
+
+.contact-section {
+    background-color: black;
+    border: 5px solid red;
+    border-radius: 40px;
+    width: 900px;
+    height: auto;
+    margin: 0 auto; /* Centering  the section horizontally */
+    padding: 20px; /* Adding padding inside the section */
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    border-radius: 50px;
+}
+
+.contact-section .form-group label {
+    font-weight: 600;
+    color: white; /* Changed color to white for better contrast */
+}
+
+.contact-section .form-control {
+    border-radius: 5px;
+    border: 2px solid rgb(255, 71, 26);
+    height: 60px;
+    width: 700px;
+    margin-bottom: 20px; /* Add some space between form elements */
+}
+
+.contact-section .btn-primary {
+    background-color: blue;
+    align-content: center;
+    border-color: red;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%; /* Make the button take the full width */
+}
+
+.contact-section .btn-primary:hover {
+    background-color: red;
+    transform: translateY(-2px);
+}
+
+.contact-info {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: white; /* Changed color to white for better contrast */
+}
+
+.contact-info a {
+    color: #28a745;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }
