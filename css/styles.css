@@ -39,10 +39,11 @@ header {
     right: 0;
     z-index: 1000;
     width: 100%;
+    height:100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    background: #e9204f ;
     padding: 28px 5%;
     /* Adjusted padding */
     border-bottom: 1px solid transparent;
@@ -51,7 +52,6 @@ header {
 
 .logo img {
     width: 200px;
-    /* Adjusted size for better visibility */
     height: auto;
     border: 2px solid red;
     border-radius: 70px;
@@ -71,14 +71,15 @@ header {
 .navlist a {
     color: var(--second-color);
     font-size: var(--p-font);
+    text-decoration: none;
     font-weight: 600;
+    font-size: 1.4rem;
     margin: 0 20px;
-    /* Adjusted margin */
     transition: all ease 0.40s;
 }
 
 .navlist a:hover {
-    color: var(--main-color);
+    color: black;
 }
 
 #menu-icon {
@@ -90,10 +91,11 @@ header {
 }
 
 section {
-    padding: 120px 19%;
+    padding: 40px ;
 }
 
 .social-icons{
+    padding: 40px;
     width: 200px;
     height: auto;
 }
@@ -102,7 +104,6 @@ section {
     position: relative;
     min-height: 100vh;
     width: 100%;
-    /* Adjusted to 100% to ensure full width */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -139,8 +140,8 @@ section {
     display: inline-block;
     padding: 16px 45px;
     background: var(--main-color);
-    color: var(--text-color);
-    font-size: 600;
+    color: white;
+    font-weight: bolder;
     border: 2px solid var(--main-color);
     transition: all ease 0.50s;
 }
@@ -149,6 +150,9 @@ section {
     transform: translateX(5px);
     background-color: transparent;
     border: solid var(--main-color);
+    color: #c6103b;
+    font-weight: bolder;
+    font-size: 1.2rem;
 }
 
 .menu {
@@ -260,14 +264,21 @@ section {
 
 /* Testimonials Styles */
 .testimonials {
-    padding: 70px 7%;
-    background: var(--bg-color);
-    text-align: center;
+    margin: 20px;
+    width: 1500px;
+    height: 600px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid red;
+    background: #e9204f;
+    flex-wrap: wrap;
 }
 
 .testimonials h2 {
-    color: var(--main-color);
-    font-size: var(--h2-font);
+    color: white;
+    font-size: 2.8rem;
+    font-weight: bolder;
     margin-bottom: 40px;
 }
 
@@ -282,23 +293,25 @@ section {
     color: var(--text-color);
     padding: 20px;
     margin: 20px;
-    border-radius: 30px;
+    border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    width: 340px;
     text-align: left;
 }
 
 .testimonial p {
-    font-size: var(--p-font);
+    font-size: 1.0rem;
     line-height: 2.5;
     margin-bottom: 15px;
 }
 
 .testimonial h3 {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: bold;
     color: var(--main-color);
-    box-shadow: 0 0 20px var(--main-color), 0 0 30px var(--main-color);
+    border-radius: 10px;
+    height:60px;
+    
 }
 
 .highlight {
@@ -368,18 +381,24 @@ section {
     margin-bottom: 20px; /* Add some space between form elements */
 }
 
+
 .contact-section .btn-primary {
-    background-color: blue;
+    
+    background-color: rgb(195, 41, 41);
+    font-size: 1.9rem;
+    font-weight: bolder;
     align-content: center;
     border-color: red;
     border-radius: 5px;
     font-size: 18px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    width: 100%; /* Make the button take the full width */
+    width: 400px;
+    height: 60px;
 }
 
 .contact-section .btn-primary:hover {
-    background-color: red;
+    background-color: green;
+    color: #101010;
     transform: translateY(-2px);
 }
 
@@ -403,3 +422,102 @@ section {
 .contact-info a:hover {
     text-decoration: underline;
 }
+
+.row gx-5{
+    background-color: var(--second-bg-color);
+    padding: 70px 7%;
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 40px;
+    width: 900px;
+    height: auto;
+}
+
+.projects{
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+    border-radius: 14%;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid red;
+    background: #e9204f;
+    flex-wrap: wrap;
+}
+
+    /* Container styling */
+
+    .projects h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+    }
+
+    /* Card styling */
+    .card {
+        border: 1px solid  rgb(165, 6, 6);
+        background: #e9204f ;
+        width:350px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img-top {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        object-fit: cover;
+        max-height: 200px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        font-size: 1rem;
+        color: black;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .card-title {
+            font-size: 1.25rem;
+        }
+        .card-text {
+            font-size: 0.9rem;
+        }
+    }
+
+    .scrollable-container {
+        max-width: 1200px;
+        max-height: 500px; /* Set the maximum height for the container */
+        overflow-y: scroll; /* Enable vertical scrolling */
+        overflow-x: hidden;
+        padding-right: 5px; /* Reduce the space for the scrollbar */
+        box-sizing: border-box; /* Include padding in width calculation */
+
+
+
+    }
+
+    body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    .testimonial-container, .projects-text {
+        max-width: 900px; /* Limit the width */
+        margin: auto; /* Center align */
+    }
+
